@@ -29,4 +29,12 @@ class VideoController extends Controller
         $res = $client->putObject($this->bucket,$obj,$cont);
         dump($res);
     }
+
+    //s视频详情页
+    public function video_detail(){
+//        echo 222;
+        $vid = $_GET['vid'];
+        $v = VideoModel::where(['vid'=>$vid])->first()->toarray();
+        return view("video.detail",['v'=>$v]);
+    }
 }
