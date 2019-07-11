@@ -11,5 +11,7 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('admin.home');
-    $router->resource('/video', VideoController::class);
+    $router->resource('/video', VideoController::class);//video列表
+    $router->resource('/upadd', UpaddController::class);  //上传视频
+
 });
