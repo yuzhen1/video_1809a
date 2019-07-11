@@ -12,7 +12,7 @@
 <hr>
 
 <div style="border:1px solid #ff58f2">
-    <video src="/storage/{{$v['path']}}" controls="controls"></video>
+    <video src="{{env('CDN_HOST')}}/{{$v['path']}}" controls="controls"></video>
 </div>
 
 </body>
