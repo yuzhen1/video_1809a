@@ -37,4 +37,9 @@ class VideoController extends Controller
         $v = VideoModel::where(['vid'=>$vid])->first()->toarray();
         return view("video.detail",['v'=>$v]);
     }
+
+    //视频点播
+    public function video_point(){
+        return view('video/vod');
+    }
 }
