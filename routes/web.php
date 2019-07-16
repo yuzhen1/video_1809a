@@ -20,4 +20,4 @@ Route::get('/cron',"CronController@move_oss");//上传到oss
 Route::get('/detail',"VideoController@video_detail");//视频详情
 Route::get('/point',"VideoController@video_point");//视频点播
 
-Route::get('/logs',"OssController@ossNotify");//生成日志文件
+Route::post('/logs',"OssController@ossNotify");//生成日志文件
