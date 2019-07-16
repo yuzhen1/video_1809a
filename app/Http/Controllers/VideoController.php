@@ -12,7 +12,7 @@ class VideoController extends Controller
     protected $accessKeySecret = '2iusAO0v5zS9Q9kBr81OIRz0HwvV8u';
     protected $bucket = 'video-1809a';
 
-    //图片上传
+    //图片上传a 
     public function oss_upload(){
         $client = new OssClient($this->accessKeyID,$this->accessKeySecret,env('ALI_OSS_ENDPOINT'));
         $obj = md5(time().mt_rand(1,99999)).'jpg'; //文件名
