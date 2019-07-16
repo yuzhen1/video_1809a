@@ -30,7 +30,7 @@ class VideoController extends Controller
         dump($res);
     }
 
-    //s视频详情页
+    //视频详情页
     public function video_detail(){
 //        echo 222;
         $vid = $_GET['vid'];
