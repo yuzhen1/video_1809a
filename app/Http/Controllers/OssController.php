@@ -12,4 +12,11 @@ class OssController extends Controller
         $log_str = date("Y-m-d H:i:s").'>>>>>>>>>'.$json."\n";
         file_put_contents("logs/oss.log",$log_str,FILE_APPEND);
     }
+
+    //推流回调、
+    public function huiDiao(){
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+    }
 }

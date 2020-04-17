@@ -8,9 +8,7 @@ use OSS\OssClient;
 
 class VideoController extends Controller
 {
-    protected $accessKeyID = 'LTAIH1Tlj5uO2Ysh';
-    protected $accessKeySecret = '2iusAO0v5zS9Q9kBr81OIRz0HwvV8u';
-    protected $bucket = 'video-1809a';
+	//已删除，重新配置即可  
 
     //图片上传
     public function oss_upload(){
@@ -41,5 +39,10 @@ class VideoController extends Controller
     //视频点播
     public function video_point(){
         return view('video/vod');
+    }
+
+    //腾讯云  视频直播
+    public function tencentZhiBo(){
+        return view('video/tencent');
     }
 }

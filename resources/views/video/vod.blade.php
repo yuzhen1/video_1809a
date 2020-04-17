@@ -13,7 +13,7 @@
 <script>
     var player = new Aliplayer({
             "id": "player-con",
-            "source": "http://play1.video.zyzyz.top/a1/a11.flv?auth_key=1562924782-0-0-8610df12cd8c3a8d2bdfc3a3f0a0465c",
+            "source": "http://laliu.zyzyz.top/test/test.flv?auth_key=1577246828-0-0-f6d86668ed5f2ddd7a3728b41698b86b",
             "width": "100%",
             "height": "500px",
             "autoplay": true,
