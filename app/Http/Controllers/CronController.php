@@ -9,9 +9,6 @@ use OSS\OssClient;
 
 class CronController extends Controller
 {
-    protected $accessKeyID = 'LTAIH1Tlj5uO2Ysh';
-    protected $accessKeySecret = '2iusAO0v5zS9Q9kBr81OIRz0HwvV8u';
-    protected $bucket = 'video-1809a';
 
     //转移视频到OSS
     public function move_oss(){
